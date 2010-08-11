@@ -19,6 +19,8 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :schedule_visits
     admin.resources :partners
     admin.resources :testimonials
+    admin.resources :videos
+    admin.resources :resellers, :collection => { :import => :get}
     admin.resources :home, :singular => :home_item
   end
   

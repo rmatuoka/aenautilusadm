@@ -4,7 +4,7 @@ class Admin::ContactsController < ApplicationController
   layout "admin"
   
   def index
-    @Contacts = Sitecontact.find(:all)
+    @Contacts = Sitecontact.find(:all , :order => "id DESC")
   end
 
   def show
