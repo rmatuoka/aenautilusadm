@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100811181345) do
+ActiveRecord::Schema.define(:version => 20100813191600) do
 
   create_table "case_images", :force => true do |t|
     t.integer  "case_id"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(:version => 20100811181345) do
     t.integer  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
   create_table "dynamic_pages", :force => true do |t|
