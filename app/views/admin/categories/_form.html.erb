@@ -4,7 +4,7 @@
 </div>
 <% end %>
 
-<% form_for ([:admin, @Section, @Category]) do |f| %>
+<% form_for ([:admin, @Section, @Category], :html => { :multipart => :true }) do |f| %>
 	<%=f.error_messages%>
 	<label>
 		Nome:<br>
@@ -12,8 +12,18 @@
 	</label><br><br>
 	
 	<label>
-		Position:<br>
+		Posição:<br>
 		<%=f.text_field :position %><br>
+	</label><br><br>
+	
+	<label>
+		Descrição:<br>
+		<%=f.text_area :description %><br>
+	</label><br><br>
+	
+	<label>
+		Imagem:<br>
+		<%=f.file_field :image %><br>
 	</label><br><br>
 	
 	<label>
