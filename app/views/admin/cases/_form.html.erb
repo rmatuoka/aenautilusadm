@@ -17,8 +17,8 @@
 		</label><br><br>
 	
 	<label>
-		Resumo (Home):<br>
-		<%=f.text_field :sumary %><br>
+		Área:<br>
+		<%=f.select :area,([["Obras Primas","Obras Primas"],["Obras Importantes","Obras Importantes"]])%>
 	</label><br><br>
 	
 	<label>
@@ -27,7 +27,7 @@
 	</label><br><br>
 	
 	<label>
-		Imagem (Home):<br>
+		Imagem:<br>
 		<%=f.file_field :image %><br>
 	</label><br><br>
 	
